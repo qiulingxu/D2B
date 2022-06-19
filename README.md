@@ -1,4 +1,31 @@
-# Bounded Adversarial Attack on Deep Content Features.
+# Bounded Adversarial Attack on Deep Content Features (CVPR 2022)
+
+## Introduction
+
+
+In this paper, we propose an adversarial attack which achieves the STOA trade-off among attack success rate and naturalness of adversarial samples among 7 related baselines.
+
+We find the scalability issues of $L_p$-norm bounded adversarial attacks. For an successful attack, its bound value needs to increase significantly. While the increased the bound size decrease the quality of adversarial samples non-trivially. Similar findings holds for recent feature-related attacks. So we ask the following question: "How should we define a bound which can balance the trade-off between successful rates and imperceptible property of adversarial samples?". 
+
+To this end, we show that we can leverage the rich information embedded in the intermediate representations for better bound. We model the intermediate representation of neural networks as a marginal distribution from the input to the real domain. And we propose to quantile bounds to define on such distributions. More details could be found in the paper.
+
+## Examples
+
+Here we list some of the examples from different algorithm. More samples can be found in the directory "samples". The analysis over the trade-off of naturalness and success rate can be found in the Paper.
+
+|                D2B 40                 |                BIM 8                 |                FS 2                 |
+| :-----------------------------------: | :----------------------------------: | :---------------------------------: |
+| ![2](samples/AdvTrained/D2B_40/2.jpg) | ![2](samples/AdvTrained/BIM_8/2.jpg) | ![2](samples/AdvTrained/FS_2/2.jpg) |
+
+|                SM 500                 |                  HotCold                  |              Spatial               |
+| :-----------------------------------: | :---------------------------------------: | :--------------------------------: |
+| ![2](samples/AdvTrained/SM_500/2.jpg) | ![2](samples/AdvTrained/HotCold_08/2.jpg) | ![2](samples/AdvTrained/SP2/2.jpg) |
+
+
+
+    ## Plan 
+
+I will be releasing the implementation for other baselines soon. 
 
 ## Test Environment:
 - Ubuntu 16.04 / Windows 10
@@ -38,5 +65,18 @@
 
 > python ./attack_mult_planes.py --task="Attack" --model="model_name" --internal --scale=0.04 --pgdpercent=0.XX --feature_smooth=10 --stat="neuron_gaussian" --targetlayer="[0,1,2]" --images="samples"
 
+## Citation
 
+If you find the code or the work beneficial, please remember to cite us.
+
+```
+@InProceedings{Xu_2022_CVPR,
+    author    = {Xu, Qiuling and Tao, Guanhong and Zhang, Xiangyu},
+    title     = {Bounded Adversarial Attack on Deep Content Features},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {15203-15212}
+}
+```
 
