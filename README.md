@@ -3,7 +3,7 @@
 ## Introduction
 
 
-In this paper, we propose an adversarial attack which achieves the STOA trade-off among attack success rate and naturalness of adversarial samples among 7 related baselines.
+In this paper, we propose an adversarial attack which achieves the STOA trade-off between attack success rate and naturalness of adversarial samples. 
 
 We find the scalability issues of $L_p$-norm bounded adversarial attacks. For an successful attack, its bound value needs to increase significantly. While the increased the bound size decrease the quality of adversarial samples non-trivially. Similar findings holds for recent feature-related attacks. So we ask the following question: "How should we define a bound which can balance the trade-off between successful rates and imperceptible property of adversarial samples?". 
 
@@ -13,15 +13,13 @@ To this end, we show that we can leverage the rich information embedded in the i
 
 Here we list some of the examples from different algorithm. More samples can be found in the directory "samples". The analysis over the trade-off of naturalness and success rate can be found in the Paper.
 
-|                D2B 40                 |                BIM 8                 |                FS 2                 |
+|             D2B 40 (Ours)             |                BIM 8                 |                FS 2                 |
 | :-----------------------------------: | :----------------------------------: | :---------------------------------: |
 | ![2](samples/AdvTrained/D2B_40/2.jpg) | ![2](samples/AdvTrained/BIM_8/2.jpg) | ![2](samples/AdvTrained/FS_2/2.jpg) |
 
 |                SM 500                 |                  HotCold                  |              Spatial               |
 | :-----------------------------------: | :---------------------------------------: | :--------------------------------: |
 | ![2](samples/AdvTrained/SM_500/2.jpg) | ![2](samples/AdvTrained/HotCold_08/2.jpg) | ![2](samples/AdvTrained/SP2/2.jpg) |
-
-
 
     ## Plan 
 
