@@ -1,13 +1,17 @@
 # Bounded Adversarial Attack on Deep Content Features (CVPR 2022)
 
+The paper can be found [here](https://openaccess.thecvf.com/content/CVPR2022/html/Xu_Bounded_Adversarial_Attack_on_Deep_Content_Features_CVPR_2022_paper.html).
+
 ## Introduction
 
 
 In this paper, we propose an adversarial attack which achieves the STOA trade-off between attack success rate and naturalness of adversarial samples. 
 
-We find the scalability issues of $L_p$-norm bounded adversarial attacks. For an successful attack, its bound value needs to increase significantly. While the increased the bound size decrease the quality of adversarial samples non-trivially. Similar findings holds for recent feature-related attacks. So we ask the following question: "How should we define a bound which can balance the trade-off between successful rates and imperceptible property of adversarial samples?". 
+We find the scalability issues of $L_p$-norm bounded adversarial attacks. For an successful attack, its bound value needs to increase significantly. While the increased bound size non-trivially decreases the quality of adversarial samples. Similar findings holds for recent feature-related attacks. 
 
-To this end, we show that we can leverage the rich information embedded in the intermediate representations for better bound. We model the intermediate representation of neural networks as a marginal distribution from the input to the real domain. And we propose to quantile bounds to define on such distributions. More details could be found in the paper.
+So we ask the following question: "*How should we define a bound which can balance the trade-off between success and imperceptible property of adversarial samples*?". 
+
+To this end, we show that we can leverage the rich information embedded in the intermediate representations for better bound. We model the intermediate representation of neural networks as a *marginal distribution* from the input to the real domain. And we propose *quantile bounds* to define on such distributions. More details could be found in the paper.
 
 ## Examples
 
