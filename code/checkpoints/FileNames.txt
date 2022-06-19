@@ -1,0 +1,13 @@
+These are the filenames of models need to be manually downloaded. Download them and place it in the folder.
+
+For Resnet50:
+    imagenet_resnet_v1_50.ckpt
+
+For Resnet152-Adv:
+    R152.npz
+
+For denoised Resnet152-Adv:
+    R152-Denoise.npz
+
+For VGG16:
+    vgg16.npy

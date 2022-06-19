@@ -1,0 +1,3 @@
+Download the imagenet dataset, and place the train test and val folders here.
+
+You could either create a symbolic link or directly copy them here.
